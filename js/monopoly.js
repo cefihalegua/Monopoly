@@ -3,23 +3,23 @@ Monopoly.allowRoll = true;
 Monopoly.moneyAtStart = 250;
 Monopoly.doubleCounter = 0;
 Monopoly.erasedPlayers = [];
-Monopoly.player1money = document.getElementById("player1money");
-Monopoly.player2money = document.getElementById("player2money");
-Monopoly.player3money = document.getElementById("player3money");
-Monopoly.player4money = document.getElementById("player4money");
-Monopoly.player5money = document.getElementById("player5money");
-Monopoly.player6money = document.getElementById("player6money");
+// Monopoly.player1money = document.getElementById("player1money");
+// Monopoly.player2money = document.getElementById("player2money");
+// Monopoly.player3money = document.getElementById("player3money");
+// Monopoly.player4money = document.getElementById("player4money");
+// Monopoly.player5money = document.getElementById("player5money");
+// Monopoly.player6money = document.getElementById("player6money");
 
-Monopoly.updateMoneyOnBoard = function() {
-    var playerNumber = document.getElementsByClassName("player").length;
-    for(let i = 1; i < (playerNumber + 1 ); i++ ) {
-        var playerid = document.getElementById("player" + i);
-        var playermoney = playerid.getAttribute("data-money");
-        Monopoly.player1money.textContent = (playerid + "\n" + playermoney);
+// Monopoly.updateMoneyOnBoard = function() {
+//     var playerNumber = document.getElementsByClassName("player").length;
+//     for(let i = 1; i < (playerNumber + 1 ); i++ ) {
+//         var playerid = document.getElementById("player" + i);
+//         var playermoney = playerid.getAttribute("data-money");
+//         Monopoly.player1money.textContent = (playerid + "\n" + playermoney);
 
-        //burada sorun var
-    }
-}
+//         //burada sorun var
+//     }
+// }
 
 //initializing the game
 Monopoly.init = function () {
